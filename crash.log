@@ -1,0 +1,663 @@
+2023-04-27T11:57:31.609+0530 [INFO]  Terraform version: 1.2.2
+2023-04-27T11:57:31.610+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2023-04-27T11:57:31.610+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2023-04-27T11:57:31.610+0530 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-04-27T11:57:31.610+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-04-27T11:57:31.610+0530 [DEBUG] using github.com/zclconf/go-cty v1.10.0
+2023-04-27T11:57:31.610+0530 [INFO]  Go runtime version: go1.18.1
+2023-04-27T11:57:31.610+0530 [INFO]  CLI args: []string{"/home/gor/.tfenv/versions/1.2.2/terraform", "plan"}
+2023-04-27T11:57:31.610+0530 [TRACE] Stdout is a terminal of width 184
+2023-04-27T11:57:31.610+0530 [TRACE] Stderr is a terminal of width 184
+2023-04-27T11:57:31.610+0530 [TRACE] Stdin is a terminal
+2023-04-27T11:57:31.610+0530 [DEBUG] Attempting to open CLI config file: /home/gor/.terraformrc
+2023-04-27T11:57:31.610+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.terraform.d/plugins
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.local/share/terraform/plugins
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2023-04-27T11:57:31.610+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2023-04-27T11:57:31.610+0530 [INFO]  CLI command args: []string{"plan"}
+2023-04-27T11:57:31.611+0530 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2023-04-27T11:57:31.611+0530 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-04-27T11:57:31.611+0530 [DEBUG] New state was assigned lineage "423d9216-dd09-9c4d-d92b-7c004df53fcb"
+2023-04-27T11:57:31.611+0530 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2023-04-27T11:57:31.611+0530 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2023-04-27T11:57:31.611+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-04-27T11:57:31.611+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v4.64.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64
+2023-04-27T11:57:31.611+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/nomad v1.4.20 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64
+2023-04-27T11:57:31.611+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64
+2023-04-27T11:57:31.612+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/tls v4.0.4 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64
+2023-04-27T11:57:31.612+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 4.64.0
+2023-04-27T11:57:31.612+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/nomad 1.4.20
+2023-04-27T11:57:31.612+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/template 2.2.0
+2023-04-27T11:57:31.612+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/tls 4.0.4
+2023-04-27T11:57:32.313+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T11:57:32.366+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T11:57:32.407+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T11:57:32.434+0530 [DEBUG] checking for provisioner in "."
+2023-04-27T11:57:32.434+0530 [DEBUG] checking for provisioner in "/home/gor/.tfenv/versions/1.2.2"
+2023-04-27T11:57:32.434+0530 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2023-04-27T11:57:32.435+0530 [INFO]  backend/local: starting Plan operation
+2023-04-27T11:57:32.435+0530 [TRACE] backend/local: requesting state manager for workspace "default"
+2023-04-27T11:57:32.435+0530 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2023-04-27T11:57:32.435+0530 [TRACE] backend/local: requesting state lock for workspace "default"
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2023-04-27T11:57:32.435+0530 [TRACE] backend/local: reading remote state for workspace "default"
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2023-04-27T11:57:32.435+0530 [TRACE] statemgr.Filesystem: read nil snapshot
+2023-04-27T11:57:32.435+0530 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2023-04-27T11:57:32.436+0530 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/tls has 4.0.4 to satisfy "~> 4.0"
+2023-04-27T11:57:32.436+0530 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/aws has 4.64.0 to satisfy "~> 4.50"
+2023-04-27T11:57:32.436+0530 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/nomad has 1.4.20 to satisfy "~> 1.0"
+2023-04-27T11:57:32.436+0530 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/template has 2.2.0 to satisfy "~> 2.0"
+2023-04-27T11:57:32.436+0530 [TRACE] terraform.NewContext: starting
+2023-04-27T11:57:32.436+0530 [TRACE] terraform.NewContext: complete
+2023-04-27T11:57:32.436+0530 [TRACE] backend/local: requesting interactive input, if necessary
+2023-04-27T11:57:32.436+0530 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2023-04-27T11:57:32.436+0530 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/aws" to read its schema
+2023-04-27T11:57:32.436+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:32.436+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:32.449+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64/terraform-provider-aws_v4.64.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64/terraform-provider-aws_v4.64.0_x5]
+2023-04-27T11:57:32.449+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64/terraform-provider-aws_v4.64.0_x5 pid=6657
+2023-04-27T11:57:32.449+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64/terraform-provider-aws_v4.64.0_x5
+2023-04-27T11:57:32.660+0530 [INFO]  provider.terraform-provider-aws_v4.64.0_x5: configuring server automatic mTLS: timestamp=2023-04-27T11:57:32.659+0530
+2023-04-27T11:57:32.673+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:32.673+0530 [DEBUG] provider.terraform-provider-aws_v4.64.0_x5: plugin address: address=/tmp/plugin2089414430 network=unix timestamp=2023-04-27T11:57:32.673+0530
+2023-04-27T11:57:32.686+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:32.686+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:32.687+0530 [TRACE] provider.terraform-provider-aws_v4.64.0_x5: Received request: @caller=github.com/hashicorp/terraform-plugin-go@v0.14.3/tfprotov5/tf5server/server.go:491 @module=sdk.proto tf_req_id=406a4749-d637-792a-4a32-7f1230b3af28 tf_rpc=GetProviderSchema tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2023-04-27T11:57:32.687+0530
+2023-04-27T11:57:32.687+0530 [TRACE] provider.terraform-provider-aws_v4.64.0_x5: Sending request downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.14.3/tfprotov5/internal/tf5serverlogging/downstream_request.go:17 tf_proto_version=5.3 tf_rpc=GetProviderSchema @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=406a4749-d637-792a-4a32-7f1230b3af28 timestamp=2023-04-27T11:57:32.687+0530
+2023-04-27T11:57:32.687+0530 [TRACE] provider.terraform-provider-aws_v4.64.0_x5: serving cached schema information: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-mux@v0.9.0/internal/logging/mux.go:16 @module=sdk.mux timestamp=2023-04-27T11:57:32.687+0530
+2023-04-27T11:57:32.687+0530 [TRACE] provider.terraform-provider-aws_v4.64.0_x5: Received downstream response: @module=sdk.proto diagnostic_error_count=0 diagnostic_warning_count=0 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.3/tfprotov5/internal/tf5serverlogging/downstream_request.go:37 tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_duration_ms=0 tf_req_id=406a4749-d637-792a-4a32-7f1230b3af28 timestamp=2023-04-27T11:57:32.687+0530
+2023-04-27T11:57:32.700+0530 [TRACE] provider.terraform-provider-aws_v4.64.0_x5: Served request: @module=sdk.proto tf_proto_version=5.3 @caller=github.com/hashicorp/terraform-plugin-go@v0.14.3/tfprotov5/tf5server/server.go:510 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=406a4749-d637-792a-4a32-7f1230b3af28 tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:32.700+0530
+2023-04-27T11:57:33.085+0530 [TRACE] GRPCProvider: Close
+2023-04-27T11:57:33.086+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2023-04-27T11:57:33.089+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64/terraform-provider-aws_v4.64.0_x5 pid=6657
+2023-04-27T11:57:33.089+0530 [DEBUG] provider: plugin exited
+2023-04-27T11:57:33.089+0530 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/nomad"
+2023-04-27T11:57:33.089+0530 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/nomad" to read its schema
+2023-04-27T11:57:33.089+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:33.089+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:33.104+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5]
+2023-04-27T11:57:33.104+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6669
+2023-04-27T11:57:33.104+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5
+2023-04-27T11:57:33.167+0530 [INFO]  provider.terraform-provider-nomad_v1.4.20_x5: configuring server automatic mTLS: timestamp=2023-04-27T11:57:33.167+0530
+2023-04-27T11:57:33.253+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:33.253+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: plugin address: network=unix address=/tmp/plugin42839601 timestamp=2023-04-27T11:57:33.253+0530
+2023-04-27T11:57:33.265+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:33.265+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:33.267+0530 [DEBUG] No provider meta schema returned
+2023-04-27T11:57:33.267+0530 [TRACE] GRPCProvider: Close
+2023-04-27T11:57:33.268+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2023-04-27T11:57:33.268+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6669
+2023-04-27T11:57:33.268+0530 [DEBUG] provider: plugin exited
+2023-04-27T11:57:33.268+0530 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/template"
+2023-04-27T11:57:33.268+0530 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/template" to read its schema
+2023-04-27T11:57:33.268+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:33.268+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:33.281+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64/terraform-provider-template_v2.2.0_x4 args=[.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64/terraform-provider-template_v2.2.0_x4]
+2023-04-27T11:57:33.281+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64/terraform-provider-template_v2.2.0_x4 pid=6679
+2023-04-27T11:57:33.281+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64/terraform-provider-template_v2.2.0_x4
+2023-04-27T11:57:33.286+0530 [INFO]  provider.terraform-provider-template_v2.2.0_x4: configuring server automatic mTLS: timestamp=2023-04-27T11:57:33.286+0530
+2023-04-27T11:57:33.378+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:33.378+0530 [DEBUG] provider.terraform-provider-template_v2.2.0_x4: plugin address: address=/tmp/plugin375437391 network=unix timestamp=2023-04-27T11:57:33.378+0530
+2023-04-27T11:57:33.487+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:33.487+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:33.488+0530 [DEBUG] No provider meta schema returned
+2023-04-27T11:57:33.488+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2023-04-27T11:57:33.488+0530 [TRACE] GRPCProvider: Close
+2023-04-27T11:57:33.490+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64/terraform-provider-template_v2.2.0_x4 pid=6679
+2023-04-27T11:57:33.490+0530 [DEBUG] provider: plugin exited
+2023-04-27T11:57:33.490+0530 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/tls"
+2023-04-27T11:57:33.490+0530 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/tls" to read its schema
+2023-04-27T11:57:33.490+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:33.490+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:33.503+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5]
+2023-04-27T11:57:33.503+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5 pid=6690
+2023-04-27T11:57:33.503+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5
+2023-04-27T11:57:33.507+0530 [INFO]  provider.terraform-provider-tls_v4.0.4_x5: configuring server automatic mTLS: timestamp=2023-04-27T11:57:33.507+0530
+2023-04-27T11:57:33.520+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:33.520+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: plugin address: address=/tmp/plugin2816118647 network=unix timestamp=2023-04-27T11:57:33.520+0530
+2023-04-27T11:57:33.537+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:33.537+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:33.537+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Received request: @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:491 tf_proto_version=5.3 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.537+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Sending request downstream: tf_provider_addr=registry.terraform.io/hashicorp/tls @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:17 @module=sdk.proto tf_proto_version=5.3 tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.537+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Provider implements ProviderWithMetadata: tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server_getproviderschema.go:34 @module=sdk.framework timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.537+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Provider Metadata: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server_getproviderschema.go:39 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Provider Metadata: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server_getproviderschema.go:41 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Checking ProviderSchema lock: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:252 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Provider GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:260 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Provider GetSchema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:262 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Checking ResourceSchemas lock: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:394 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Checking ResourceTypes lock: tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:320 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Provider Resources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:330 timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Provider Resources: tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:332 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found resource type: tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:353 tf_resource_type=tls_cert_request @module=sdk.framework timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found resource type: tf_rpc=GetProviderSchema tf_provider_addr=registry.terraform.io/hashicorp/tls tf_resource_type=tls_locally_signed_cert @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:353 @module=sdk.framework tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found resource type: tf_provider_addr=registry.terraform.io/hashicorp/tls @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:353 @module=sdk.framework tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_private_key tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found resource type: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:353 tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_self_signed_cert tf_rpc=GetProviderSchema @module=sdk.framework timestamp=2023-04-27T11:57:33.537+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Resource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:411 tf_provider_addr=registry.terraform.io/hashicorp/tls tf_rpc=GetProviderSchema @module=sdk.framework tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_cert_request timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Resource GetSchema: @module=sdk.framework tf_resource_type=tls_cert_request tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:413 timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Resource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:411 @module=sdk.framework tf_rpc=GetProviderSchema tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_locally_signed_cert timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Resource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:413 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_resource_type=tls_locally_signed_cert tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Resource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:411 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_private_key tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Resource GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/tls @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:413 tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_private_key tf_rpc=GetProviderSchema @module=sdk.framework timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Resource GetSchema: tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_resource_type=tls_self_signed_cert @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:411 tf_provider_addr=registry.terraform.io/hashicorp/tls tf_rpc=GetProviderSchema @module=sdk.framework timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Resource GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/tls tf_resource_type=tls_self_signed_cert tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:413 @module=sdk.framework tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Checking DataSourceSchemas lock: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:216 timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Checking DataSourceTypes lock: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:142 timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined Provider DataSources: tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:152 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined Provider DataSources: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:154 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found data source type: tf_data_source_type=tls_certificate tf_provider_addr=registry.terraform.io/hashicorp/tls @module=sdk.framework tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:175 tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Found data source type: tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:175 @module=sdk.framework tf_data_source_type=tls_public_key tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined DataSource GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/tls @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:233 tf_data_source_type=tls_public_key tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined DataSource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:235 @module=sdk.framework tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_data_source_type=tls_public_key tf_provider_addr=registry.terraform.io/hashicorp/tls tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Calling provider defined DataSource GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:233 tf_rpc=GetProviderSchema @module=sdk.framework tf_data_source_type=tls_certificate tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] provider.terraform-provider-tls_v4.0.4_x5: Called provider defined DataSource GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/tls @caller=github.com/hashicorp/terraform-plugin-framework@v0.15.0/internal/fwserver/server.go:235 @module=sdk.framework tf_data_source_type=tls_certificate tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Received downstream response: diagnostic_warning_count=0 tf_provider_addr=registry.terraform.io/hashicorp/tls tf_req_duration_ms=0 tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:37 @module=sdk.proto diagnostic_error_count=0 tf_proto_version=5.3 tf_rpc=GetProviderSchema timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [TRACE] provider.terraform-provider-tls_v4.0.4_x5: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:510 tf_req_id=884d9221-0dbb-0453-907e-c080e9738feb tf_rpc=GetProviderSchema @module=sdk.proto tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/tls timestamp=2023-04-27T11:57:33.538+0530
+2023-04-27T11:57:33.538+0530 [DEBUG] No provider meta schema returned
+2023-04-27T11:57:33.538+0530 [TRACE] GRPCProvider: Close
+2023-04-27T11:57:33.539+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2023-04-27T11:57:33.539+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5 pid=6690
+2023-04-27T11:57:33.539+0530 [DEBUG] provider: plugin exited
+2023-04-27T11:57:33.539+0530 [TRACE] Context.Input: Prompting for provider arguments
+2023-04-27T11:57:33.539+0530 [TRACE] Context.Input: Provider provider.nomad declared at pwx_csi_volumes.tf:23,1-17
+2023-04-27T11:57:33.539+0530 [TRACE] Context.Input: Input for provider.nomad: map[string]cty.Value{}
+2023-04-27T11:57:33.539+0530 [TRACE] backend/local: running validation operation
+2023-04-27T11:57:33.539+0530 [DEBUG] Building and walking validate graph
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] ConfigTransformer: Starting for path:
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.LocalTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.OutputTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] OutputTransformer: adding external as *terraform.NodeApplyableOutput
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+  output.external - *terraform.NodeApplyableOutput
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.StateTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] AttachResourceConfigTransformer: attaching to "data.nomad_volumes.example" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"pwx_csi_volumes.tf", Start:hcl.Pos{Line:29, Column:1, Byte:509}, End:hcl.Pos{Line:29, Column:31, Byte:539}}
+2023-04-27T11:57:33.539+0530 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.nomad_volumes.example
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/nomad\"]" provider configuration from pwx_csi_volumes.tf:23,1-17
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/template"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/tls"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/nomad"] serving data.nomad_volumes.example
+2023-04-27T11:57:33.539+0530 [DEBUG] ProviderTransformer: "data.nomad_volumes.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/template"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/tls"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2023-04-27T11:57:33.539+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/aws"]
+2023-04-27T11:57:33.539+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/template"]
+2023-04-27T11:57:33.539+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/tls"]
+2023-04-27T11:57:33.539+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] AttachSchemaTransformer: attaching resource schema to data.nomad_volumes.example
+2023-04-27T11:57:33.539+0530 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2023-04-27T11:57:33.539+0530 [DEBUG] ReferenceTransformer: "output.external" references: [data.nomad_volumes.example]
+2023-04-27T11:57:33.539+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/nomad\"]" references: []
+2023-04-27T11:57:33.539+0530 [DEBUG] ReferenceTransformer: "data.nomad_volumes.example" references: []
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2023-04-27T11:57:33.539+0530 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2023-04-27T11:57:33.539+0530 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] attachDataDependenciesTransformer: data.nomad_volumes.example depends on []
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2023-04-27T11:57:33.540+0530 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2023-04-27T11:57:33.540+0530 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2023-04-27T11:57:33.540+0530 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.540+0530 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    output.external - *terraform.NodeApplyableOutput
+    provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2023-04-27T11:57:33.540+0530 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2023-04-27T11:57:33.540+0530 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    output.external - *terraform.NodeApplyableOutput
+    provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2023-04-27T11:57:33.540+0530 [DEBUG] Starting graph walk: walkValidate
+2023-04-27T11:57:33.540+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"]": starting visit (*terraform.NodeApplyableProvider)
+2023-04-27T11:57:33.540+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:33.540+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:33.552+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5]
+2023-04-27T11:57:33.552+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6697
+2023-04-27T11:57:33.552+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5
+2023-04-27T11:57:33.583+0530 [INFO]  provider.terraform-provider-nomad_v1.4.20_x5: configuring server automatic mTLS: timestamp=2023-04-27T11:57:33.583+0530
+2023-04-27T11:57:33.596+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:33.596+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: plugin address: address=/tmp/plugin3188162514 network=unix timestamp=2023-04-27T11:57:33.596+0530
+2023-04-27T11:57:33.609+0530 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/nomad\"]" provider for provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.609+0530 [TRACE] NodeApplyableProvider: validating configuration for provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.609+0530 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/nomad"]: using explicit config only
+2023-04-27T11:57:33.609+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:33.609+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:33.611+0530 [DEBUG] No provider meta schema returned
+2023-04-27T11:57:33.611+0530 [TRACE] GRPCProvider: ValidateProviderConfig
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"]": visit complete
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "data.nomad_volumes.example": starting visit (*terraform.NodeValidatableResource)
+2023-04-27T11:57:33.613+0530 [TRACE] GRPCProvider: ValidateDataResourceConfig
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "data.nomad_volumes.example": visit complete
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "output.external": starting visit (*terraform.NodeApplyableOutput)
+2023-04-27T11:57:33.613+0530 [TRACE] setValue: Saving Create change for output.external in changeset
+2023-04-27T11:57:33.613+0530 [TRACE] setValue: Removing output.external from state (it is now null)
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "output.external": visit complete
+2023-04-27T11:57:33.613+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2023-04-27T11:57:33.613+0530 [TRACE] GRPCProvider: Close
+2023-04-27T11:57:33.614+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2023-04-27T11:57:33.614+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6697
+2023-04-27T11:57:33.614+0530 [DEBUG] provider: plugin exited
+2023-04-27T11:57:33.614+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"] (close)": visit complete
+2023-04-27T11:57:33.614+0530 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2023-04-27T11:57:33.614+0530 [TRACE] vertex "root": visit complete
+2023-04-27T11:57:33.614+0530 [INFO]  backend/local: plan calling Plan
+2023-04-27T11:57:33.614+0530 [DEBUG] Building and walking plan graph for NormalMode
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] ConfigTransformer: Starting for path:
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.LocalTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.OutputTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] OutputTransformer: adding external as *terraform.NodeApplyableOutput
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  output.external - *terraform.NodeApplyableOutput
+  ------
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.StateTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] AttachResourceConfigTransformer: attaching to "data.nomad_volumes.example (expand)" (*terraform.nodeExpandPlannableResource) config from hcl.Range{Filename:"pwx_csi_volumes.tf", Start:hcl.Pos{Line:29, Column:1, Byte:509}, End:hcl.Pos{Line:29, Column:31, Byte:539}}
+2023-04-27T11:57:33.614+0530 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.nomad_volumes.example (expand)
+2023-04-27T11:57:33.614+0530 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/nomad\"]" provider configuration from pwx_csi_volumes.tf:23,1-17
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/template"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/tls"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2023-04-27T11:57:33.614+0530 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/nomad"] serving data.nomad_volumes.example (expand)
+2023-04-27T11:57:33.614+0530 [DEBUG] ProviderTransformer: "data.nomad_volumes.example (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/template"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/tls"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.614+0530 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2023-04-27T11:57:33.615+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/aws"]
+2023-04-27T11:57:33.615+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/template"]
+2023-04-27T11:57:33.615+0530 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/tls"]
+2023-04-27T11:57:33.615+0530 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.615+0530 [TRACE] AttachSchemaTransformer: attaching resource schema to data.nomad_volumes.example (expand)
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2023-04-27T11:57:33.615+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/nomad\"]" references: []
+2023-04-27T11:57:33.615+0530 [DEBUG] ReferenceTransformer: "data.nomad_volumes.example (expand)" references: []
+2023-04-27T11:57:33.615+0530 [DEBUG] ReferenceTransformer: "output.external" references: [data.nomad_volumes.example (expand)]
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] AttachDependenciesTransformer: data.nomad_volumes.example depends on []
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] attachDataDependenciesTransformer: data.nomad_volumes.example depends on []
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] ForcedCBDTransformer: "data.nomad_volumes.example (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  ------
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    output.external - *terraform.NodeApplyableOutput
+    provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2023-04-27T11:57:33.615+0530 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2023-04-27T11:57:33.615+0530 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  output.external - *terraform.NodeApplyableOutput
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/nomad"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+    data.nomad_volumes.example (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    output.external - *terraform.NodeApplyableOutput
+    provider["registry.terraform.io/hashicorp/nomad"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2023-04-27T11:57:33.615+0530 [DEBUG] Starting graph walk: walkPlan
+2023-04-27T11:57:33.615+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"]": starting visit (*terraform.NodeApplyableProvider)
+2023-04-27T11:57:33.615+0530 [DEBUG] created provider logger: level=trace
+2023-04-27T11:57:33.615+0530 [INFO]  provider: configuring client automatic mTLS
+2023-04-27T11:57:33.627+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5]
+2023-04-27T11:57:33.628+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6707
+2023-04-27T11:57:33.628+0530 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5
+2023-04-27T11:57:33.652+0530 [INFO]  provider.terraform-provider-nomad_v1.4.20_x5: configuring server automatic mTLS: timestamp=2023-04-27T11:57:33.652+0530
+2023-04-27T11:57:33.703+0530 [DEBUG] provider: using plugin: version=5
+2023-04-27T11:57:33.703+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: plugin address: address=/tmp/plugin3414598691 network=unix timestamp=2023-04-27T11:57:33.703+0530
+2023-04-27T11:57:33.715+0530 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/nomad\"]" provider for provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.715+0530 [TRACE] NodeApplyableProvider: configuring provider["registry.terraform.io/hashicorp/nomad"]
+2023-04-27T11:57:33.715+0530 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/nomad"]: using explicit config only
+2023-04-27T11:57:33.715+0530 [TRACE] GRPCProvider: GetProviderSchema
+2023-04-27T11:57:33.715+0530 [TRACE] provider.stdio: waiting for stdio data
+2023-04-27T11:57:33.717+0530 [DEBUG] No provider meta schema returned
+2023-04-27T11:57:33.717+0530 [TRACE] GRPCProvider: ValidateProviderConfig
+2023-04-27T11:57:33.720+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/nomad\"]" changed the config value, but that value is unused
+2023-04-27T11:57:33.720+0530 [TRACE] GRPCProvider: ConfigureProvider
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/nomad\"]": visit complete
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example (expand)": expanding dynamic subgraph
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example (expand)": entering dynamic subgraph
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example": starting visit (*terraform.NodePlannableResource)
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example": expanding dynamic subgraph
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2023-04-27T11:57:33.721+0530 [TRACE] ResourceCountTransformer: adding data.nomad_volumes.example as *terraform.NodePlannableResourceInstance
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  data.nomad_volumes.example - *terraform.NodePlannableResourceInstance
+  ------
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2023-04-27T11:57:33.721+0530 [DEBUG] Resource instance state not found for node "data.nomad_volumes.example", instance data.nomad_volumes.example
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2023-04-27T11:57:33.721+0530 [DEBUG] ReferenceTransformer: "data.nomad_volumes.example" references: []
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2023-04-27T11:57:33.721+0530 [TRACE] Executing graph transform *terraform.RootTransformer
+2023-04-27T11:57:33.721+0530 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example": entering dynamic subgraph
+2023-04-27T11:57:33.721+0530 [TRACE] vertex "data.nomad_volumes.example": starting visit (*terraform.NodePlannableResourceInstance)
+2023-04-27T11:57:33.721+0530 [TRACE] readDataSource: Re-validating config for data.nomad_volumes.example
+2023-04-27T11:57:33.721+0530 [TRACE] GRPCProvider: ValidateDataResourceConfig
+2023-04-27T11:57:33.721+0530 [TRACE] readDataSource: data.nomad_volumes.example configuration is complete, so reading from provider
+2023-04-27T11:57:33.721+0530 [TRACE] GRPCProvider: ReadDataSource
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: panic: assignment to entry in nil map
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: goroutine 51 [running]:
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: github.com/hashicorp/terraform-provider-nomad/nomad.volumesDataSourceRead(0xc000324bd0?, {0x114cb60?, 0xc000414de0?})
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	github.com/hashicorp/terraform-provider-nomad/nomad/data_source_volumes.go:74 +0x205
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Resource).ReadDataApply(0xc0003606e0, 0xc000324510?, {0x114cb60, 0xc000414de0})
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	github.com/hashicorp/terraform-plugin-sdk@v1.17.2/helper/schema/resource.go:413 +0x66
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Provider).ReadDataApply(0xc0001f2d00, 0xc000569990, 0x107f000?)
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	github.com/hashicorp/terraform-plugin-sdk@v1.17.2/helper/schema/provider.go:451 +0x65
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin.(*GRPCProviderServer).ReadDataSource(0xc0001270a8, {0xc00055c600?, 0x4bc346?}, 0xc00055c600)
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	github.com/hashicorp/terraform-plugin-sdk@v1.17.2/internal/helper/plugin/grpc_provider.go:1046 +0x2e9
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5._Provider_ReadDataSource_Handler({0x11b7ce0?, 0xc0001270a8}, {0x1587ab0, 0xc00089f6b0}, 0xc000825030, 0x0)
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	github.com/hashicorp/terraform-plugin-sdk@v1.17.2/internal/tfplugin5/tfplugin5.pb.go:3341 +0x170
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: google.golang.org/grpc.(*Server).processUnaryRPC(0xc0001c0000, {0x158d100, 0xc00054a820}, 0xc000309b00, 0xc00037bb90, 0x1d0b490, 0x0)
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	google.golang.org/grpc@v1.53.0/server.go:1336 +0xd23
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: google.golang.org/grpc.(*Server).handleStream(0xc0001c0000, {0x158d100, 0xc00054a820}, 0xc000309b00, 0x0)
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	google.golang.org/grpc@v1.53.0/server.go:1704 +0xa2f
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: google.golang.org/grpc.(*Server).serveStreams.func1.2()
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	google.golang.org/grpc@v1.53.0/server.go:965 +0x98
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: created by google.golang.org/grpc.(*Server).serveStreams.func1
+2023-04-27T11:57:33.838+0530 [DEBUG] provider.terraform-provider-nomad_v1.4.20_x5: 	google.golang.org/grpc@v1.53.0/server.go:963 +0x28a
+2023-04-27T11:57:33.839+0530 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64/terraform-provider-nomad_v1.4.20_x5 pid=6707 error="exit status 2"
+2023-04-27T11:57:33.839+0530 [ERROR] plugin.(*GRPCProvider).ReadDataSource: error="rpc error: code = Canceled desc = context canceled"
+2023-04-27T11:57:33.839+0530 [ERROR] vertex "data.nomad_volumes.example" error: Request cancelled
+2023-04-27T11:57:33.839+0530 [TRACE] vertex "data.nomad_volumes.example": visit complete, with errors
+2023-04-27T11:57:33.839+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2023-04-27T11:57:33.839+0530 [TRACE] vertex "data.nomad_volumes.example": dynamic subgraph encountered errors: Request cancelled
+2023-04-27T11:57:33.839+0530 [ERROR] vertex "data.nomad_volumes.example" error: Request cancelled
+2023-04-27T11:57:33.839+0530 [TRACE] vertex "data.nomad_volumes.example": visit complete, with errors
+2023-04-27T11:57:33.839+0530 [TRACE] vertex "data.nomad_volumes.example (expand)": dynamic subgraph encountered errors: Request cancelled
+2023-04-27T11:57:33.839+0530 [ERROR] vertex "data.nomad_volumes.example (expand)" error: Request cancelled
+2023-04-27T11:57:33.839+0530 [TRACE] vertex "data.nomad_volumes.example (expand)": visit complete, with errors
+2023-04-27T11:57:33.839+0530 [TRACE] dag/walk: upstream of "output.external" errored, so skipping
+2023-04-27T11:57:33.839+0530 [TRACE] dag/walk: upstream of "provider[\"registry.terraform.io/hashicorp/nomad\"] (close)" errored, so skipping
+2023-04-27T11:57:33.839+0530 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2023-04-27T11:57:33.839+0530 [INFO]  backend/local: plan operation completed
+2023-04-27T11:57:33.839+0530 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2023-04-27T11:57:33.840+0530 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2023-04-27T11:57:33.840+0530 [DEBUG] provider: plugin exited
+2023-04-27T12:28:41.199+0530 [INFO]  Terraform version: 1.2.2
+2023-04-27T12:28:41.199+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2023-04-27T12:28:41.199+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2023-04-27T12:28:41.199+0530 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-04-27T12:28:41.199+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-04-27T12:28:41.199+0530 [DEBUG] using github.com/zclconf/go-cty v1.10.0
+2023-04-27T12:28:41.199+0530 [INFO]  Go runtime version: go1.18.1
+2023-04-27T12:28:41.199+0530 [INFO]  CLI args: []string{"/home/gor/.tfenv/versions/1.2.2/terraform", "init"}
+2023-04-27T12:28:41.199+0530 [TRACE] Stdout is a terminal of width 184
+2023-04-27T12:28:41.199+0530 [TRACE] Stderr is a terminal of width 184
+2023-04-27T12:28:41.199+0530 [TRACE] Stdin is a terminal
+2023-04-27T12:28:41.199+0530 [DEBUG] Attempting to open CLI config file: /home/gor/.terraformrc
+2023-04-27T12:28:41.199+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.terraform.d/plugins
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.local/share/terraform/plugins
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2023-04-27T12:28:41.199+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2023-04-27T12:28:41.200+0530 [INFO]  CLI command args: []string{"init"}
+2023-04-27T12:29:18.231+0530 [INFO]  Terraform version: 1.4.6
+2023-04-27T12:29:18.231+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.21.0
+2023-04-27T12:29:18.231+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.2
+2023-04-27T12:29:18.231+0530 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-04-27T12:29:18.231+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.0
+2023-04-27T12:29:18.231+0530 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-04-27T12:29:18.231+0530 [INFO]  Go runtime version: go1.19.6
+2023-04-27T12:29:18.231+0530 [INFO]  CLI args: []string{"/home/gor/.tfenv/versions/1.4.6/terraform", "init"}
+2023-04-27T12:29:18.231+0530 [TRACE] Stdout is a terminal of width 184
+2023-04-27T12:29:18.231+0530 [TRACE] Stderr is a terminal of width 184
+2023-04-27T12:29:18.231+0530 [TRACE] Stdin is a terminal
+2023-04-27T12:29:18.231+0530 [DEBUG] Attempting to open CLI config file: /home/gor/.terraformrc
+2023-04-27T12:29:18.231+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.terraform.d/plugins
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory /home/gor/.local/share/terraform/plugins
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2023-04-27T12:29:18.231+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2023-04-27T12:29:18.231+0530 [INFO]  CLI command args: []string{"init"}
+2023-04-27T12:29:18.232+0530 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2023-04-27T12:29:18.232+0530 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-04-27T12:29:18.232+0530 [DEBUG] New state was assigned lineage "308ce2f0-889c-7872-2af9-51465736f862"
+2023-04-27T12:29:18.232+0530 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2023-04-27T12:29:18.232+0530 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2023-04-27T12:29:18.232+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-04-27T12:29:18.232+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v4.64.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64
+2023-04-27T12:29:18.232+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/nomad v1.4.20 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64
+2023-04-27T12:29:18.232+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64
+2023-04-27T12:29:18.232+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/tls v4.0.4 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64
+2023-04-27T12:29:18.232+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 4.64.0
+2023-04-27T12:29:18.232+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/nomad 1.4.20
+2023-04-27T12:29:18.232+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/template 2.2.0
+2023-04-27T12:29:18.232+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/tls 4.0.4
+2023-04-27T12:29:18.940+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T12:29:18.993+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T12:29:19.033+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T12:29:19.061+0530 [DEBUG] checking for provisioner in "."
+2023-04-27T12:29:19.061+0530 [DEBUG] checking for provisioner in "/home/gor/.tfenv/versions/1.4.6"
+2023-04-27T12:29:19.061+0530 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2023-04-27T12:29:19.061+0530 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2023-04-27T12:29:19.061+0530 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2023-04-27T12:29:19.061+0530 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2023-04-27T12:29:19.061+0530 [TRACE] statemgr.Filesystem: read nil snapshot
+2023-04-27T12:29:19.063+0530 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2023-04-27T12:29:19.063+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2023-04-27T12:29:19.090+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/tls/versions
+2023-04-27T12:29:19.090+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/tls/versions
+2023-04-27T12:29:19.370+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-04-27T12:29:19.370+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-04-27T12:29:19.644+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/nomad/versions
+2023-04-27T12:29:19.644+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/nomad/versions
+2023-04-27T12:29:19.907+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/template/versions
+2023-04-27T12:29:19.907+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/template/versions
+2023-04-27T12:29:20.132+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-04-27T12:29:20.132+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v4.64.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64
+2023-04-27T12:29:20.132+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/nomad v1.4.20 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64
+2023-04-27T12:29:20.132+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64
+2023-04-27T12:29:20.132+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/tls v4.0.4 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64
+2023-04-27T12:29:20.132+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/template 2.2.0
+2023-04-27T12:29:20.132+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/tls 4.0.4
+2023-04-27T12:29:20.132+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 4.64.0
+2023-04-27T12:29:20.132+0530 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/nomad/1.4.20/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/nomad 1.4.20
+2023-04-27T12:29:20.831+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T12:29:20.883+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2023-04-27T12:29:20.924+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
